@@ -2,6 +2,7 @@ let display = document.querySelector('.display');
 var operator = '';
 var a = 0;
 var b = 0;
+
 function sum(){
   display.innerHTML += '+'
   operator = '+'
@@ -14,8 +15,11 @@ function div(){
   display.innerHTML += '/'
   operator = '/'
 }
+function mul(){
+  display.innerHTML += '*'
+  operator = '*'
+}
 
-const mul = (a,b)=>a*b
 
 function equal(){
   let all = display.innerHTML
@@ -50,8 +54,7 @@ function equal(){
         res = Number(a) / Number(b);
         display.innerHTML = res
         break;
-  }
-    
+    }
   }
 
 
